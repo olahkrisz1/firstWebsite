@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="first website attempt" />
+    <meta name="keywords" content="personal website, only html, basic" />
+    <title>My first Website</title>
+    <style type="text/css">
+      #main-header {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 15px;
+      }
+      #main-footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <img src="pictureofmyself.jpg" alt="profilePicture" width="200" />
+      <h1>Krisztian Olah</h1>
+      <h2>My first website</h2>
+    </header>
+    <p>
+      Hello everyone, this is my first attempt to build a website using only
+      html......let's see how it goes..:)) Just a small introduction about me: I
+      was born in Hungary but I have been living in the Netherlands for three
+      years now...recently I have decided to pursue a career in the IT sector,
+      so here I am..
+    </p>
+    <p>
+      When I am not sitting in front of the computer I like to do the following:
+    </p>
+    <ul>
+      <li>cooking</li>
+      <li>travelling and visiting new places</li>
+      <li>running and cycling</li>
+      <li>meeting people from different cultures</li>
+    </ul>
+    <p>My favourite foods are:</p>
+    <ol>
+      <li>Hamburger</li>
+      <li>Lasagne</li>
+      <li>Pizza</li>
+      <li>Osso Bucco</li>
+    </ol>
+    <p>
+      If you are wondering what is the last food check it out
+      <a href="https://en.wikipedia.org/wiki/Ossobuco" target="_blank">here</a>
+    </p>
+    <p>
+      Last time I had a wonderful time in this south-korean restaurant, the food
+      is delicious, <span style="color: red">I highly recommend them!!</span> If
+      you want to check out, visit their
+      <a href="https://www.seoulsista.nl/eng/rotterdam-witte-de-with-en/"
+        >website</a
+      >
+    </p>
+    <br />
+    <p>Recipes of my <strong>favourite foods:</strong></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Cheeseburger</th>
+          <th>Veggie lasagne</th>
+          <th>Pepperoni Pizza</th>
+          <th>Osso Bucco</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, in
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, in
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, in
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, in
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <p>
+      If you want to contact me please leave your details below and I will get
+      back to you shortly
+    </p>
+    <form action="process.php" method="POST">
+      <div>
+        <label>First name:</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Last name:</label>
+        <input type="text" name="lastName" placeholder="Enter your last name" />
+      </div>
+      <br />
+      <div>
+        <label>Gender:</label>
+        <select name="gender" id="genderSelect">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label>phone number:</label>
+        <input type="text" name="phoneNumber" placeholder="+31" />
+      </div>
+      <div>
+        <p>What is your favourite food? Select the ones you like:</p>
+
+        <input type="checkbox" id="Food1" name="Gnocchi" value="Gnocchi" />
+        <label for="Food1">Gnocchi</label><br />
+        <input type="checkbox" id="Food2" name="Kebab" value="Kebab" />
+        <label for="Food2">Kebab</label><br />
+        <input
+          type="checkbox"
+          id="Food3"
+          name="ToastedBread"
+          value="ToastedBread"
+        />
+        <label for="Food3">Toasted Bread</label><br />
+        <input type="checkbox" id="Food4" name="Pasta" value="Pasta" />
+        <label for="Food4">Pasta</label>
+      </div>
+      <br />
+      <div>
+        <p>How do you like to eat Beef steak?</p>
+        <input type="radio" id="rare" name="steakCooked" value="Rare" />
+        <label for="rare">Rare</label><br />
+        <input type="radio" id="medium" name="steakCooked" value="Medium" />
+        <label for="medium">Medium</label><br />
+        <input type="radio" id="welldone" name="steakCooked" value="Welldone" />
+        <label for="rare">Well done</label><br />
+      </div>
+      <br />
+      <input type="submit" value="Submit" name="submit" />
+    </form>
+    <br />
+    <hr />
+    <br />
+
+    <footer id="main-footer">
+      <p>Copyright &copy; 2023, my website</p>
+    </footer>
+  </body>
+</html>
